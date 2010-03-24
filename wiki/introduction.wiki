@@ -1,6 +1,5 @@
 #labels Featured
-=Introduction=
-Its very easy to install the program.
+=Its very easy to install the program.=
 <br />
 <br />
 
