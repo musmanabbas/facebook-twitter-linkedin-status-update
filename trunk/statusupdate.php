@@ -18,7 +18,7 @@ if (!empty($status)){
 
     //linkedin status update
     if (isset($_SESSION['requestToken']) && isset($_SESSION['oauth_verifier']) && isset($_SESSION['oauth_access_token'])){
-        $fblinkedtwit->linkedinStatusUpdate($status, unserialize($_SESSION['requestToken']), $_SESSION['oauth_verifier'], unserialize($_SESSION['oauth_access_token']));
+        $fblinkedtwit->linkedinStatusUpdate($status, $_SESSION['requestToken'], $_SESSION['oauth_verifier'], $_SESSION['oauth_access_token']);
     }
 }
 ?>
