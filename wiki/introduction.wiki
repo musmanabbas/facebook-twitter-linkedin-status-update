@@ -60,5 +60,5 @@ Now write something and click Update Status. Now check your sites like twitter,f
 
 
 Code:
-#linkedin_twitter folder contains twitter and linkedin library 
-#facebook folder contains facebook library
+*linkedin_twitter folder contains twitter and linkedin library 
+*facebook folder contains facebook library
