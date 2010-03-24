@@ -63,7 +63,7 @@ Code:<br />
 1. linkedin_twitter folder contains twitter and linkedin library <br />
 2. facebook folder contains facebook library<br />
 <br />
-3. config.php contains all the configuration settings
+3. config.php contains all the configuration settings <br />
 4. class.fblinkedtwit.php is a class that contains some functions which are used to update status in facebook, twitter and linkedin. It also contains some functions those retrieve data from linkedin and twitter.<br />
 5. statusupdate.php is used by ajax to update status. <br />
 6. javascript.js contains all the essential javascript functions. <br />
