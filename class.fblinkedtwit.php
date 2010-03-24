@@ -41,19 +41,21 @@ class FbLinkedTwit {
         include_once $this->config['facebook_library_path'];
 
         $facebook   =   new Facebook($this->config['fb_api'], $this->config['fb_secret']);
-        $user       =   $facebook->require_login();
+        $user       =   $facebook->api_client->user;
 
         if (empty($id))
             $id     =   $user;
 
-        try{
-            $status = $facebook->api_client->users_setStatus($status, $id);
-            echo "Facebook status updated successfully!<br />";
-        }
-        catch(Exception $o){
-            echo "<br />Facebook Status couldn't updated!</br>";
-            print_r($o);
-            echo '<br />';
+        if (!empty($id)){
+            try{
+                $status = $facebook->api_client->users_setStatus($status, $id);
+                echo "Facebook status updated successfully!<br />";
+            }
+            catch(Exception $o){
+                echo "<br />Facebook Status couldn't updated!</br>";
+                print_r($o);
+                echo '<br />';
+            }
         }
     }
 
@@ -63,9 +65,9 @@ class FbLinkedTwit {
 
         $linkedin = new LinkedIn($this->config['linkedin_access'], $this->config['linkedin_secret']);
 
-        $linkedin->request_token    =   $requestToken;
+        $linkedin->request_token    =   unserialize($requestToken);
         $linkedin->oauth_verifier   =   $oauthVerifier;
-        $linkedin->access_token     =   $accessToken;
+        $linkedin->access_token     =   unserialize($accessToken);
 
         try{
             $stat = $linkedin->setStatus($status);
@@ -83,9 +85,9 @@ class FbLinkedTwit {
 
         $linkedin = new LinkedIn($this->config['linkedin_access'], $this->config['linkedin_secret']);
 
-        $linkedin->request_token    =   $requestToken;
+        $linkedin->request_token    =   unserialize($requestToken); //as data is passed here serialized form
         $linkedin->oauth_verifier   =   $oauthVerifier;
-        $linkedin->access_token     =   $accessToken;
+        $linkedin->access_token     =   unserialize($accessToken);
 
         try{
             $xml_response = $linkedin->getProfile("~:(id,first-name,last-name,headline,picture-url,public-profile-url)");

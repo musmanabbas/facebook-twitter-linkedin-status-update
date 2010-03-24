@@ -68,7 +68,7 @@
                     <?php
                         if (isset($_SESSION['requestToken']) && isset($_SESSION['oauth_verifier']) && isset($_SESSION['oauth_access_token'])){
                             echo '<b>Linkedin Information</b><br />';
-                            $data = $fblinkedtwit->linkedinGetLoggedinUserInfo(unserialize($_SESSION['requestToken']), $_SESSION['oauth_verifier'], unserialize($_SESSION['oauth_access_token']));
+                            $data = $fblinkedtwit->linkedinGetLoggedinUserInfo($_SESSION['requestToken'], $_SESSION['oauth_verifier'], $_SESSION['oauth_access_token']);
 
                             $data = simplexml_load_string($data);
                             ?>
