@@ -40,8 +40,10 @@ $config['linkedin_secret']      =   'yyy your linkedin application secret key';
 }}}
 <br />
 14. Also update this configuation<br />
+{{{
 $config['base_url']             =   ''; // it would be url without file like <br />http://thinkdiff.net/demo/fblinkedtwit'
 $config['callback_url']         =   ''; // like http://thinkdiff.net/demo/fblinkedtwit/index.php
+}}}
 <br /><br />
 15. Upload all codes of this project in your hosting.<br />
 16. Now visit your application. In my case the url is http://thinkdiff.net/demo/fblinkedtwit<br /><br />
