@@ -16,23 +16,29 @@ Steps:
 3. Provide the Connect URL. For my case I provide http://thinkdiff.net/demo/fblinkedtwit/ (because here i hosted the applications code) <br />
 4. Click Save Changes and you'll get api and secret key.<br />
 5. Now place those api and secret keys in the config.php<br />
-$config['fb_api']               =   'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';<br />
-$config['fb_secret']            =   'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy';<br />
+{{{
+$config['fb_api']               =   'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$config['fb_secret']            =   'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy';
+}}}
 <br /><br />
 6. Create a new application in twitter. Visit this page to learn how to create twitter application. http://thinkdiff.net/category/twitter/<br />
 7. In twitter application setup set application website to http://yourdomain/yourproj/index.php. In my case it is http://thinkdiff.net/demo/fblinkedtwit/index.php<br />
 8. In twitter application setup set callback url like http://yourdomain/yourproj/twitterauth.php. In my case it is http://thinkdiff.net/demo/fblinkedtwit/twitterauth.php<br />
 9. After creating application update the config file<br />
-$config['twitter_consumer']     =   'xxxxxx your app consumer key';<br />
-$config['twitter_secret']       =   'your app secret key';<br /><br />
+{{{
+$config['twitter_consumer']     =   'xxxxxx your app consumer key';
+$config['twitter_secret']       =   'your app secret key';
+}}}
 
 10. Create a new application in linkedin. Visit http://thinkdiff.net/linkedin/integrate-linkedin-api-in-your-site/ to learn how to create linkedin application.<br />
 11. In linkedin application setup set integration url http://yourdomain/yourproj/index.php. In my case it is http://thinkdiff.net/demo/fblinkedtwit/index.php<br />
 12. In linkedin application setup set oAuth redirect url to http://yourdomain/yourproj/linkedinauth.php. In my case it is http://thinkdiff.net/demo/fblinkedtwit/linkedinauth.php<br />
 13. After creating application update the config file<br />
-$config['linkedin_access']      =   'xxx your linkedin application access key';<br />
-$config['linkedin_secret']      =   'yyy your linkedin application secret key';<br /><br />
-
+{{{
+$config['linkedin_access']      =   'xxx your linkedin application access key';
+$config['linkedin_secret']      =   'yyy your linkedin application secret key';
+}}}
+<br />
 14. Also update this configuation<br />
 $config['base_url']             =   ''; // it would be url without file like <br />http://thinkdiff.net/demo/fblinkedtwit'
 $config['callback_url']         =   ''; // like http://thinkdiff.net/demo/fblinkedtwit/index.php
