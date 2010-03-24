@@ -49,7 +49,7 @@ $config['callback_url']         =   ''; // like http://thinkdiff.net/demo/fblink
 
 Also remember: to update facebook status you must have to give status updated permission by clicking Give Status Update Permission<br /><br />
 
-Run:
+Run: <br />
 1. Connect by facebook<br />
 2. Give Twitter Access<br />
 3. Give Linkedin Access<br /><br />
@@ -57,3 +57,8 @@ Run:
 You may only give any one's permission like, only twitter access or linkedin access as your wish.<br /><br />
 
 Now write something and click Update Status. Now check your sites like twitter,facebook or linkedin to see the update<br />
+
+
+Code:
+#linkedin_twitter folder contains twitter and linkedin library 
+#facebook folder contains facebook library
