@@ -1,0 +1,4 @@
+This is an open source php, jquery base application. This applications uses the api of facebook, linkedin and twitter to update user's status. This application will be very helpful to learn fbconnect, facebook extended permission and api to update status, oAuth for twitter and linkedin authentication and also update status.
+
+<br /><br />
+Read the article about this project from <a href='http://thinkdiff.net/facebook/open-source-facebook-twitter-linkedin-status-update-application/'><a href='http://thinkdiff.net/facebook/open-source-facebook-twitter-linkedin-status-update-application/'>http://thinkdiff.net/facebook/open-source-facebook-twitter-linkedin-status-update-application/</a></a>
